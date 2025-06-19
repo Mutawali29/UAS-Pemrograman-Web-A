@@ -1,0 +1,109 @@
+/* ================================================= */
+/* Stylesheet Khusus untuk Halaman Login & Register  */
+/* File: styles/login.css (Versi Outline)            */
+/* ================================================= */
+
+/* Hapus style latar belakang gradien dari body.
+   Class .auth-page tidak lagi diperlukan untuk background,
+   namun tetap berguna untuk menyembunyikan footer jika diinginkan. */
+.auth-page footer {
+    display: none;
+}
+
+/* Wrapper untuk menciptakan efek outline gradien */
+.auth-container-wrapper {
+    max-width: 450px;
+    margin: 60px auto;
+    padding: 3px; /* Ketebalan outline diatur di sini */
+    background: linear-gradient(110deg, #7B2CBF, #F72585);
+    border-radius: 14px; /* Sedikit lebih besar dari radius kontainer dalam */
+    box-shadow: 0 8px 25px rgba(123, 44, 191, 0.15);
+}
+
+/* Kontainer form utama yang sekarang berwarna putih */
+.auth-container {
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 12px; /* Lebih kecil dari wrapper untuk menciptakan efek outline */
+}
+
+.auth-container h2 {
+    text-align: center;
+    font-size: 2.2em;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+/* Form Styles (tetap sama) */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #7B2CBF;
+    box-shadow: 0 0 0 3px rgba(123, 44, 191, 0.15);
+}
+
+.auth-container .btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1em;
+}
+
+/* Link untuk beralih antara Login/Register */
+.auth-switch-link {
+    text-align: center;
+    margin-top: 25px;
+    color: #555;
+}
+
+.auth-switch-link a {
+    font-weight: bold;
+}
+
+/* Pesan Error & Sukses */
+.message {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    text-align: center;
+}
+.error-list {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.error-list ul {
+    margin: 0;
+    padding-left: 20px;
+    text-align: left;
+}
+.success-message {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
